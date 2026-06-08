@@ -1,0 +1,7 @@
+streamlit
+groq
+duckduckgo-search
+ddgs
+wikipedia
+wikipedia-api
+python-dotenv
