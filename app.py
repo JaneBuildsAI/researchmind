@@ -12,12 +12,12 @@ st.caption(
 st.divider()
 
 # Input
-topic = st.text_input(
-    "Enter a research topic",
-    placeholder="e.g. Large language models, Climate change 2025, Quantum computing",
-)
-
-run = st.button("Research", type="primary")
+with st.form(key="search_form"):
+    topic = st.text_input(
+        "Enter a research topic",
+        placeholder="e.g. Large language models, Climate change 2025, Quantum computing",
+    )
+    run = st.form_submit_button("Research", type="primary")
 
 if run and topic:
     col1, col2 = st.columns([2, 1])
